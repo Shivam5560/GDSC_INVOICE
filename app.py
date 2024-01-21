@@ -53,8 +53,8 @@ and you will have to answer any questions based on the uploaded invoice image
 ## if submit button is clicked
 
 if submit:
-    with st.spinner('Wait for a few seconds')
-    image_data=input_image_details(uploaded_file)
-    response=get_gemini_response(input_prompt,image_data,input)
-    st.subheader("The Response is")
-    st.text_area(label ="",value=response,height=500)
+    with st.spinner('Wait for a few seconds'):
+        image_data=input_image_details(uploaded_file)
+        response=get_gemini_response(input_prompt,image_data,input)
+        st.subheader("The Response is")
+        st.text_area(label ="",value=response,height=500)
